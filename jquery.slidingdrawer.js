@@ -18,6 +18,7 @@ $(function() {
       '-webkit-transform': 'perspective(2000) rotate3d(0, 1, 0, ' + rotation + 'deg)',
       'transform': 'perspective(2000) rotate3d(0, 1, 0, ' + rotation + 'deg)'
     });
+    evt.preventDefault();
   });
   
   $(window).bind('mousemove touchmove', function(evt) {
