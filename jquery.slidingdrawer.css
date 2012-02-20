@@ -2,8 +2,9 @@ div.drawer {
   background: #080808;
   position: fixed;
   width: 240px;
-  height: 100%;
+  height: auto;
   top: 0;
+  bottom: 0;
   left: 0;
   z-index: 9999;
   -webkit-user-select: none;
