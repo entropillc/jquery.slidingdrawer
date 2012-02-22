@@ -16,7 +16,7 @@ div.drawer {
   backface-visibility: hidden;
   -webkit-transform-origin: 0;
   -webkit-transform-style: preserve-3d;
-  -webkit-transform: perspective(2000) translate3d(0, 0, 30px) rotate3d(0, 1, 0, -90deg);
+  -webkit-transform: perspective(2000) translate3d(0, 0, 1px) rotate3d(0, 1, 0, -90deg);
 }
 
 div.drawer-handle {
@@ -82,7 +82,7 @@ div.drawer:before, div.drawer:after {
   backface-visibility: hidden;
   -webkit-transform-origin: 0;
   -webkit-transform-style: preserve-3d;
-  -webkit-transform: perspective(0) rotate3d(0, 1, 0, 80deg) translate3d(0, 0, -2px);
+  -webkit-transform: perspective(0) rotate3d(0, 1, 0, 80deg) translate3d(0, 0, 1px);
 }
 
 div.drawer:after {
@@ -93,5 +93,5 @@ div.drawer:after {
   background: -ms-linear-gradient(left, #080808 0%, #444 100%); /* IE10+ */
   background: linear-gradient(left, #080808 0%, #444 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#080808', endColorstr='#444', GradientType=1); /* IE6-9 */
-  -webkit-transform: perspective(0) rotate3d(0, 1, 0, -10deg) translate3d(-2px, 0, 0);
+  -webkit-transform: perspective(0) rotate3d(0, 1, 0, -10deg) translate3d(-2px, 0, 1px);
 }

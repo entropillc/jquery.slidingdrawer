@@ -9,7 +9,7 @@ $(function() {
   drawer.data('closeDrawer', function() {
     rotation = -90;
     
-    var transform = 'perspective(2000) translate3d(0, 0, 30px) rotate3d(0, 1, 0, ' + rotation + 'deg)';
+    var transform = 'perspective(2000) translate3d(0, 0, 1px) rotate3d(0, 1, 0, ' + rotation + 'deg)';
     
     drawer.css({
       '-webkit-transition': 'all 0.5s',
@@ -26,7 +26,7 @@ $(function() {
     lastMouseX = evt.pageX || ((e.touches && e.touches.length) ? e.touches[0].pageX : 0);
     delta = 0;
     
-    var transform = 'perspective(2000) translate3d(0, 0, 30px) rotate3d(0, 1, 0, ' + rotation + 'deg)';
+    var transform = 'perspective(2000) translate3d(0, 0, 1px) rotate3d(0, 1, 0, ' + rotation + 'deg)';
     
     drawer.css({
       '-webkit-transition': 'none',
@@ -35,7 +35,7 @@ $(function() {
       'transform': transform
     });
     
-    evt.preventDefault();
+    //evt.preventDefault();
   });
   
   $(window).bind('mousemove touchmove', function(evt) {
@@ -55,14 +55,14 @@ $(function() {
     
     lastMouseX = mouseX;
     
-    var transform = 'perspective(2000) translate3d(0, 0, 30px) rotate3d(0, 1, 0, ' + rotation + 'deg)';
+    var transform = 'perspective(2000) translate3d(0, 0, 1px) rotate3d(0, 1, 0, ' + rotation + 'deg)';
     
     drawer.css({
       '-webkit-transform': transform,
       'transform': transform
     });
     
-    evt.preventDefault();
+    //evt.preventDefault();
   }).bind('mouseup touchend', function(evt) {
     if (!isDragging) return;
     
@@ -82,7 +82,7 @@ $(function() {
     lastMouseX = 0;
     delta = 0;
     
-    var transform = 'perspective(2000) translate3d(0, 0, 30px) rotate3d(0, 1, 0, ' + rotation + 'deg)';
+    var transform = 'perspective(2000) translate3d(0, 0, 1px) rotate3d(0, 1, 0, ' + rotation + 'deg)';
     
     drawer.css({
       '-webkit-transition': 'all 0.3s',
@@ -91,6 +91,6 @@ $(function() {
       'transform': transform
     });
     
-    evt.preventDefault();
+    //evt.preventDefault();
   });
 });
